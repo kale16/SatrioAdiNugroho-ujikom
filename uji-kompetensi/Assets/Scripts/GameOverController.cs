@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    public float gameDuration = 120f;
+    public float gameDuration;
     
-    private float currentTime = 0f;
+    private float currentTime = 0;
     private bool isGameOver = false;
     void Start()
     {
@@ -14,7 +14,7 @@ public class NewBehaviourScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if(!isGameOver)
         {

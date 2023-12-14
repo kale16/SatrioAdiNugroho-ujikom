@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public GameObject bulletPrefab;
     public Transform firePoint;
+    public int bulletDamage;
     void Start()
     {
         
@@ -47,4 +48,6 @@ public class PlayerController : MonoBehaviour
         Instantiate(bulletPrefab, firePoint.position, transform.rotation);
         Debug.Log("ditembak");
     }
+
+    
 }
